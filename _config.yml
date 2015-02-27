@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
+title:            tech.verbinnen.org
 locale:           en_US
-url:              
+url:
 
 
 # Jekyll configuration
@@ -26,23 +26,23 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Christophe Verbinnen
   avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email: 
-  disqus-shortname: 
-  twitter: #username
+  bio: "I'm a Software Engineer working for Lookout, Inc in beautiful San Francisco. Interested mostly in Web stacks and scallable architectures."
+  email: djpate@gmail.com
+  disqus-shortname:
+  twitter: djpate
   facebook: #username
   google:
     plus: #username
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
-  github: #username
-  stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: djpate
+  stackoverflow: 474321/paté
+  linkedin: christopheverbinnen
   instagram: #username
   lastfm: #username
   tumblr: #username
