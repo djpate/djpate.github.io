@@ -28,19 +28,33 @@
   </div><!-- /.image-wrap -->
 {% endif %}
 
-<div id="main" role="main"> 
+<div id="main" role="main">
   <div class="article-author-side">
     {% include _author-bio.html %}
   </div>
   <div id="index">
     <h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
-    {% for post in site.posts limit:5 %}    
+    {% for post in site.posts limit:5 %}
     <article>
       {% if post.link %}
         <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
       {% else %}
-        <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        <h2>
+          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+            {{ post.title }}
+          </a>
+          <div class="meta">
+            <span>By Christophe Verbinnen on
+            {% assign d = post.date | date: "%-d" %}
+            {{ post.date | date: "%B" }}
+            {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+            {{ post.date | date: "%Y" }} in {{post.categories}}</span>
+          </div>
+        </h2>
+        <p>
+          {{ post.excerpt | strip_html }}
+          <a href="{{ site.url }}{{ post.url }}" title="Read more">Read more</a>
+        </p>
       {% endif %}
     </article>
     {% endfor %}
@@ -54,6 +68,6 @@
 </div><!-- /.footer-wrap -->
 
 {% include _scripts.html %}
-  
+
 </body>
 </html>

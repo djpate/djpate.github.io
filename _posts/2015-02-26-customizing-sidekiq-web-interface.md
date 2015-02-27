@@ -3,7 +3,6 @@ layout: post
 title: "Customizing Sidekiq Web Interface"
 modified:
 categories: ['ruby']
-excerpt:
 tags: []
 image:
   feature:

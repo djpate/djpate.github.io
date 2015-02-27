@@ -3,7 +3,6 @@ layout: post
 title: "Geo2TZ - Find the Timezone of a Set of Coordinates"
 modified:
 categories: ['ruby']
-excerpt:
 tags: ['geo2tz', 'ruby', 'gem']
 image:
   feature:
