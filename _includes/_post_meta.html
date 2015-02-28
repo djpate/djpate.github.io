@@ -1,0 +1,12 @@
+{% if post %}
+  {% assign post_data = post %}
+{% else %}
+  {% assign post_data = page %}
+{% endif %}
+<div class="meta">
+  <span>By Christophe Verbinnen on
+  {% assign d = post_data.date | date: "%-d" %}
+  {{ post_data.date | date: "%B" }}
+  {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+  {{ post_data.date | date: "%Y" }} in {{post_data.categories}}</span>
+</div>

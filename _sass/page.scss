@@ -248,10 +248,20 @@ $button-size: 1.5rem;
 	}
 }
 
-article.post, #index, .article-wrap{
+article.post, #index, article.page{
 	border-radius: 10px;
 	background-color: #444444;
 	padding: 20px;
+}
+
+article.post{
+	h1 {
+		margin-bottom: 5px;
+	}
+	.meta{
+		font-size: 1.2em;
+		color: #999;
+	}
 }
 
 footer{
