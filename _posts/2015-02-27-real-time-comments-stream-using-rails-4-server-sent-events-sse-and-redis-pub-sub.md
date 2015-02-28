@@ -2,8 +2,7 @@
 layout: post
 title: "REAL TIME COMMENTS STREAM USING RAILS 4, SERVER SENT EVENTS (SSE) and REDIS PUB/SUB"
 modified:
-categories:
-excerpt:
+categories: ['ruby']
 tags: []
 image:
   feature:
