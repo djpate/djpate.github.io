@@ -7,6 +7,7 @@ tags: []
 image:
   feature:
 date: 2013-05-14T22:48:14-08:00
+comments: true
 ---
 
 If you are using rails CSRF protection feature, you might have ran into the issue that you need to add a csrf header to all your ajax requests.

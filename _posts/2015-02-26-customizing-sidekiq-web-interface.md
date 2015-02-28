@@ -7,6 +7,7 @@ tags: []
 image:
   feature:
 date: 2015-02-26T22:29:09-08:00
+comments: true
 ---
 
 I've been using Sidekiq for a while now and I really love it but I've always found the Web ui to not suit my need perfectly.

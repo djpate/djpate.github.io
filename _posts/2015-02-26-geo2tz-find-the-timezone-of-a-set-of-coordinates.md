@@ -7,6 +7,7 @@ tags: ['geo2tz', 'ruby', 'gem']
 image:
   feature:
 date: 2013-05-23T22:53:26-08:00
+comments: true
 ---
 
 At work we really needed a tool to give us a timezone for a specific sets of coordinates but we couldn’t rely on external services since they can be quite unreliable/slow.
