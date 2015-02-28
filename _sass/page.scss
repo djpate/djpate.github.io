@@ -84,6 +84,10 @@ body {
 			padding: 10px 0;
 			decoration: none;
 			border-bottom: 0 solid transparent;
+			color: #fc0;
+			&:visited{
+				color: #fc0;
+			}
 			@include transition(all .2s);
 			@media #{$small} {
 				display: inline;
@@ -244,10 +248,21 @@ $button-size: 1.5rem;
 	}
 }
 
-article.post{
+article.post, #index, .article-wrap{
 	border-radius: 10px;
 	background-color: #444444;
 	padding: 20px;
+}
+
+footer{
+	background-color: #212121;
+	margin-top: 40px;
+	padding: 20px;
+	line-height: 40px;
+	text-align: center;
+	img{
+		height: 20px;
+	}
 }
 
 /* Index listing specific styling */

@@ -1,4 +1,10 @@
 # Site navigation links
 
-- title: Posts
+- title: All Posts
   url: /posts/
+
+- title: About Me
+  url: /about/
+
+- title: View on GitHub
+  url: https://github.com/djpate/djpate.github.io
